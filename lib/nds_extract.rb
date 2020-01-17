@@ -47,13 +47,13 @@ def total_gross(source)
   # returned by directors_totals, and add it to a running total. When done,
   # return the total
   # pp source
-  total = 0
-  count = 0
-  while directors_totals(source).length > count
-    total += directors_totals(source)
-    count += 1
-  end
-  # print total
+  # total = 0
+  # count = 0
+  # while directors_totals(source).length > count
+  #   total += directors_totals(source)
+  #   count += 1
+  # end
+  # return total
 end
 
 
