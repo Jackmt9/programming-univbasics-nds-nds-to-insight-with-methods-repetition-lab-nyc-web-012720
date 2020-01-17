@@ -47,13 +47,13 @@ def total_gross(source)
   # returned by directors_totals, and add it to a running total. When done,
   # return the total
   # pp source
-  count1 = 0
-  count2 = 0
-  while source.length > count1
-    total = 0
-    while source[count1][:movies].length > count2
-      source[count1][:movies][count2][:worldwide_gross]
-      
+  total = 0
+  count = 0
+  while directors_totals(source).length > count
+    total += directors_totals(source)[list_of_directors[count]]
+    count += 1
+  end
+  return total
 end
 
 
