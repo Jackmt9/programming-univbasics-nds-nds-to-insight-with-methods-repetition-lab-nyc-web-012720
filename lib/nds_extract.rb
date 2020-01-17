@@ -51,7 +51,8 @@ def total_gross(source)
   count = 0
   hash = directors_totals(source)
   while hash.length > count
-    total += hash[list_of_directors[count]]
+    name = list_of_directors[count]
+    total += hash[name]
     count += 1
   end
   return total
